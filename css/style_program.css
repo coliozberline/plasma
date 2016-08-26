@@ -1,0 +1,365 @@
+* {
+	transition: all 1s ease;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px;
+	font-family:'Quicksand', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #222222;
+}
+
+.container {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* --------------------------------------------------- MENU FIXE */
+
+.nav_bar {
+  	width: 100%;
+  	max-width: 1600px;
+  	text-align: center;
+ 	position: fixed;
+  	top:0;
+  	background-color: white;
+  	z-index: 1000;
+  	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_bar_top .logos_rs,
+.nav_bar_top .small_logo_plasma,
+.nav_bar_top .logos_resa_news {
+	float:left;
+}
+
+.nav_bar_top:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.nav_bar_top {
+	width: 93%;
+	display: flex;
+	justify-content:space-between;
+	margin:auto;
+	margin-top: 1%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #222222; 
+}
+
+.logos_rs {
+	display: inline-block;
+	width:30%;
+	margin :0% 1%;
+	margin-top: 10px;
+}
+
+.logo_rs {
+	height: 45px;
+}
+
+.logo_plasma {
+	width:30%;
+	height: auto;
+	margin: 1%;
+	z-index: 200;
+}
+
+.logo_small {
+	height: 65px;
+	vertical-align: middle;
+}
+
+.logos_resa_news {
+	width:30%;
+	height: 45px;
+	margin-top: 10px;
+}
+
+.resa_news {
+	width: 144.6px;
+	background-color: black;
+	color: white;
+	line-height: 45px;
+	margin: 0px 1%;
+	display: inline-block;
+}
+
+.main_menu {
+	padding: 1px;
+	list-style: none;
+	text-align: center;
+	margin-top: 0.1%;
+	margin-bottom: 0.1%;
+}
+
+.main_menu li {
+	display: inline-block;
+	width:27%;
+	height: 30px;
+	margin: 0.5%;
+	border: 3px solid;
+}
+
+.main_menu li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #222222;
+}
+
+.menu_prog:hover{
+	background-image: url("patterns/stripes.png");
+	background-size: cover;
+	background-position: center;
+	font-weight: 700;
+}
+
+.menu_fest:hover {
+	background-image: url("patterns/dots.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-weight: 700;
+}
+
+.menu_infos:hover {
+	background-image: url("patterns/waves.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-weight: 700;
+}
+
+/* --------------------------------------------------- BLOCS */
+
+.home_page {
+	width: 90%;
+	padding-top: 11%;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.video_wrapper {
+	width: 64.4%;
+	height: 0;
+	padding-bottom: 31%;
+	display: inline-block;
+	margin:1%;
+	position:relative;
+}
+
+.video_wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.size_1x1 {
+	width: 31%;
+	padding-bottom: 31%;
+	display: inline-block;
+	margin:1%;
+	position:relative;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.size_2x1 {
+	width: 64.4%;
+	padding-bottom: 31%;
+	display: inline-block;
+	margin:1%;
+	position:relative;
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center top;
+}
+
+.size_3x1 {
+	width: 98%;
+	padding-bottom: 28%;
+	display: inline-block;
+	margin:1%;
+	position:relative;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center top;
+}
+
+.item1 {
+	background-image: url("artists/kollectiv-trumstrasse.jpg");
+}
+
+.item2 {
+	background-image: url("picto/kevin-hamon_peek-a-boo.jpg");
+}
+
+.item3 {
+	background-image: url("picto/asu-ceren-yazgan_bumpy-bird.gif");
+	box-sizing: border-box;
+	box-shadow:inset 0px 0px 0px 5px black;
+}
+
+.item4 {
+	background-image: url("picto/lars-keller_hunting-season-2.jpg");
+}
+
+.item5 {
+	background-image: url("artists/rone.jpg");
+}
+
+.item6 {
+	background-image: url("artists/chapelier-fou.jpg");
+}
+
+.item7 {
+	background-image: url("artists/birdy-nam-nam.jpg");
+}
+
+.item8 {
+	background-image: url("picto/sarah-klan_pinocchio-sausage.jpg");
+}
+
+.item9 {
+	background-image: url("artists/agoria.jpg");
+}
+
+.item_hover {
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+.hover_blue {
+	background-color:rgba(179,222,236,0);
+}
+
+.hover_blue:hover {
+	background-color:rgba(179,222,236,0.7);
+	box-shadow:inset 0px 0px 0px 12px rgba(179,222,236,1);
+    transition: background-color 1s ease, box-shadow 0.2s ease;
+}
+
+.hover_pink {
+	background-color:rgba(237,115,108,0);
+}
+
+.hover_pink:hover {
+	background-color:rgba(237,115,108,0.7);
+	box-shadow:inset 0px 0px 0px 12px rgba(237,115,108,1);
+    transition: background-color 1s ease, box-shadow 0.2s ease;
+}
+
+.hover_yellow {
+	background-color:rgba(255,218,140,0);
+}
+
+.hover_yellow:hover {
+	background-color:rgba(255,218,140,0.7);
+	box-shadow:inset 0px 0px 0px 12px rgba(255,218,140,1);
+    transition: background-color 1s ease, box-shadow 0.2s ease;
+}
+
+.hover_stripes {
+	background-image:url("patterns/stripes.png");
+	background-size: cover; 
+	opacity: 0;
+}
+
+.hover_stripes:hover {
+	opacity: 1;
+	box-shadow:inset 0px 0px 0px 12px rgba(237,115,108,1);
+	transition: opacity 1s ease, box-shadow 0.2s ease;
+}
+
+.hover_dots {
+	background-image:url("patterns/dots.png");
+	background-size: cover;
+	opacity: 0;
+}
+.hover_dots:hover {
+	opacity: 1;
+	/* background-color:rgba(255,218,140,0.7); */
+	box-shadow:inset 0px 0px 0px 12px rgba(255,218,140,1);
+	transition: opacity 1s ease, box-shadow 0.2s ease;
+}
+
+.hover_waves {
+	/*background-image:url("patterns/waves.png");*/
+	background-size: cover;
+	opacity: 0;
+}
+
+.hover_waves:hover {
+	opacity: 1;
+	box-shadow:inset 0px 0px 0px 12px rgba(179,222,236,1);
+	transition: opacity 1s ease, box-shadow 0.2s ease;
+}
+
+
+
+.hover_text{
+	width: 100%;
+	height: 100%;
+	font-size: 26px;
+	padding-left: 20px;
+	padding-top: 20px;
+	opacity: 0;
+}
+
+.hover_text:hover{
+	opacity: 1;
+}
+
+
+/* --------------------------------------------------- FOOTER */
+
+.footer { 
+	width: 100%;
+	height:5%;
+	bottom: 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.logo_mel {
+	width: 2%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer_links:hover{
+	font-weight: 700; 
+}
+
+/* --------------------------------------------------- COMME UN PORC */
+
+.home_page_pres {
+	height:700px;
+}
+
+.pres_picto {
+	text-align: center;
+}
